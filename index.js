@@ -1,6 +1,6 @@
 // VARIABLE SECTION
-let firstCard = 5
-let secondCard = 11
+let firstCard = getRandomCard()
+let secondCard = getRandomCard()
 let cards = [firstCard, secondCard]
 let sum = firstCard + secondCard
 let hasBlackJack = false
@@ -14,7 +14,14 @@ let cardsEl = document.getElementById("cards-el")
 // CONDITIONAL SECTION
 
 function getRandomCard() {
-    return Math.floor( Math.random()*13 ) + 1
+    let ranNumber = Math.floor( Math.random()*13 ) + 1
+    if (ranNumber > 10) {
+        return 10
+    } else if (ranNumber === 1) {
+        return 11
+    } else {
+        return ranNumber
+    }
 }
 
 function startGame() {
