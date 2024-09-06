@@ -12,6 +12,11 @@ let cardsEl = document.getElementById("cards-el")
 
 
 // CONDITIONAL SECTION
+
+function getRandomCard() {
+    return Math.floor( Math.random()*13 ) + 1
+}
+
 function startGame() {
     renderGame()
 }
@@ -36,8 +41,7 @@ function renderGame() {
 }
 
 function newCard() {
-    console.log("Drawing a new card from the deck!")
-    let card = 4
+    let card = getRandomCard()
     sum += card
     cards.push(card)
     renderGame()
