@@ -9,6 +9,14 @@ let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 
+// OBJECT SECTION
+let player = {
+    name: "Isaac",
+    chips: 145
+}
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" + player.chips
+
 
 // CONDITIONAL SECTION
 
