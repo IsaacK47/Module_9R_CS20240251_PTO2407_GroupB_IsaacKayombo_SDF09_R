@@ -1,4 +1,4 @@
-
+/* --- BASIC STYLES --- */
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url(images/table.png);
@@ -27,3 +27,4 @@ button {
     font-weight: bold;
     margin-bottom: 3px;
 }
+/* --- END OF STYLES --- */

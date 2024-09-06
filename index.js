@@ -8,6 +8,8 @@ let message = ""
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
+// END OF VARIABLE SECTION
+
 
 // OBJECT SECTION
 let player = {
@@ -16,9 +18,12 @@ let player = {
 }
 let playerEl = document.getElementById("player-el")
 playerEl.textContent = player.name + ": $" + player.chips
+// END OF OBJECT SECTION 
 
 
-// CONDITIONAL SECTION
+
+
+// FUNCTION SECTION --- LOGICAL SECTION //
 
 function getRandomCard() {
     let ranNumber = Math.floor( Math.random()*13 ) + 1
@@ -68,3 +73,4 @@ function newCard() {
     }
     
 }
+// --- END OF FUNCTION SECTION --- //
